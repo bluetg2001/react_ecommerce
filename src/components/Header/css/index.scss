@@ -44,13 +44,11 @@ $grey-2: #767676;
                     font-size: 14px;
                     font-weight: bold;
                     cursor: pointer;
+                    color: $grey-2;
                 }
 
                 .clicked {
                     color: black;
-                }
-                .none-click {
-                    color: $grey-2;
                 }
             }
         }

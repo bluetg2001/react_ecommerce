@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Input() {
+function SearchInput() {
   return (
-    <div className="input">
+    <div className="search-input">
       <input type="text" placeholder="Search Products" />
       <div className="search-icon">
         <img src="/assets/Search/input_search-icon.svg" alt="검색하기" />
@@ -11,4 +11,4 @@ function Input() {
   );
 }
 
-export default Input;
+export default SearchInput;

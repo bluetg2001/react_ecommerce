@@ -62,13 +62,10 @@
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  color: #767676;
 }
 
 #root .header > .wrapper .languages .clicked {
   color: black;
-}
-
-#root .header > .wrapper .languages .none-click {
-  color: #767676;
 }
 /*# sourceMappingURL=index.css.map */

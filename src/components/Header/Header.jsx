@@ -27,15 +27,15 @@ function Header() {
         <Navigation menus={menuSet} />
         <ul className="languages">
           <li
-            className={`language ${isEnClicked ? 'clicked' : 'none-click'}
-                  ${isRuClicked ? 'none-click' : 'clicked'}`}
+            className={`language ${isEnClicked ? 'clicked' : ''}
+                  ${isRuClicked ? '' : 'clicked'}`}
             onClick={selectEn}
           >
             EN
           </li>
           <li
-            className={`language ${isRuClicked ? 'clicked' : 'none-click'}
-                  ${isEnClicked ? 'none-click' : 'clicked'}`}
+            className={`language ${isRuClicked ? 'clicked' : ''}
+                  ${isEnClicked ? '' : 'clicked'}`}
             onClick={selectRu}
           >
             RU

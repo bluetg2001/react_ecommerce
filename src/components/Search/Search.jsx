@@ -1,6 +1,6 @@
 import React from 'react';
 import Category from './components/Category/Category';
-import Input from './components/Input/Input';
+import SearchInput from './components/SearchInput/SearchInput';
 import Mypage from './components/Mypage/Mypage';
 import './css/index.css';
 
@@ -9,7 +9,7 @@ function Search() {
     <div className="search">
       <div className="wrapper">
         <Category />
-        <Input />
+        <SearchInput />
         <Mypage />
       </div>
     </div>

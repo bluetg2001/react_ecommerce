@@ -36,7 +36,7 @@ $grey-3: #c4c4c4;
                 }
             }
 
-            .input {
+            .search-input {
                 position: relative;
                 width: 601px;
                 height: 50px;
@@ -52,7 +52,6 @@ $grey-3: #c4c4c4;
 
                 input::placeholder {
                     font-size: 14px;
-                    line-height: 1.14;
                     color: $grey-3;
                 }
 
@@ -70,7 +69,6 @@ $grey-3: #c4c4c4;
                 right: 0px;
                 column-gap: 16px;
 
-                // column-gap: 41px;
                 .mymenus {
                     display: flex;
                     cursor: pointer;
