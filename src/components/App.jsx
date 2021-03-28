@@ -24,7 +24,7 @@ function App() {
         <Route path="/contacts" exact component={Contacts} />
         <Route path="/journal" exact component={Journal} />
         <Route path="/journal/:id" exact component={JournalInside} />
-        <Route path="/" component={NotFound}></Route>
+        <Route path="/" component={NotFound} />
       </Switch>
       <Footer />
     </Router>
