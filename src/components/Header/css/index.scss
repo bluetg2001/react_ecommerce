@@ -7,7 +7,7 @@ $grey-2: #767676;
         align-items: center;
         width: 100%;
 
-        .wrapper {
+        &>.wrapper {
             position: relative;
             width: 1600px;
             height: 80px;
@@ -15,7 +15,7 @@ $grey-2: #767676;
             justify-content: center;
             align-items: center;
 
-            &>.logo {
+            .logo {
                 position: absolute;
                 left: 0px;
                 width: 65px;
@@ -23,7 +23,7 @@ $grey-2: #767676;
                 cursor: pointer;
             }
 
-            &>.menus {
+            .menus {
                 display: grid;
                 grid-template-columns: repeat(5, auto);
                 column-gap: 41px;
@@ -33,7 +33,7 @@ $grey-2: #767676;
                 }
             }
 
-            &>.languages {
+            .languages {
                 position: absolute;
                 right: 0px;
                 display: grid;
@@ -44,6 +44,13 @@ $grey-2: #767676;
                     font-size: 14px;
                     font-weight: bold;
                     cursor: pointer;
+                }
+
+                .clicked {
+                    color: black;
+                }
+                .none-click {
+                    color: $grey-2;
                 }
             }
         }
