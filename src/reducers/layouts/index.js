@@ -16,29 +16,29 @@ const initialState = {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '40',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                 ],
 
@@ -49,29 +49,29 @@ const initialState = {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '40',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                 ]
             },
@@ -81,29 +81,29 @@ const initialState = {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '40',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                 ],
 
@@ -115,29 +115,29 @@ const initialState = {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '40',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New',
-                        percent : '0'
+                        event: 'New',
+                        percent: '0'
                     },
                 ],
             },
@@ -188,74 +188,7 @@ const initialState = {
     ],
 
     // Footer
-    shop: [{
-            title: 'Category 1',
-            path: '/',
-        },
-        {
-            title: 'Category 2',
-            path: '/',
-        },
-        {
-            title: 'Category 3',
-            path: '/',
-        },
-        {
-            title: 'Category 4',
-            path: '/',
-        },
-        {
-            title: 'Category 5',
-            path: '/',
-        },
-    ],
-
-    help: [{
-            title: 'Privacy Policy',
-            path: '/',
-        },
-        {
-            title: 'Terms & Conditions',
-            path: '/',
-        },
-        {
-            title: 'Speical E-shop',
-            path: '/',
-        },
-        {
-            title: 'Shipping',
-            path: '/',
-        },
-        {
-            title: 'Secure Payments',
-            path: '/',
-        },
-    ],
-
-    test: [{
-        menus: [{
-                title: 'Home',
-                path: '/',
-            },
-            {
-                title: 'Shop',
-                path: '/',
-            },
-            {
-                title: 'About',
-                path: '/',
-            },
-            {
-                title: 'Contacts',
-                path: '/',
-            },
-            {
-                title: 'Journal',
-                path: '/',
-            },
-
-        ],
-
+    footer: {
         shop: [{
                 title: 'Category 1',
                 path: '/',
@@ -277,7 +210,6 @@ const initialState = {
                 path: '/',
             },
         ],
-
         help: [{
                 title: 'Privacy Policy',
                 path: '/',
@@ -299,7 +231,29 @@ const initialState = {
                 path: '/',
             },
         ],
-    }],
+        menus: [{
+                title: 'Home',
+                path: '/',
+            },
+            {
+                title: 'Shop',
+                path: '/shop',
+            },
+            {
+                title: 'About',
+                path: '/about',
+            },
+            {
+                title: 'Contacts',
+                path: '/contacts',
+            },
+            {
+                title: 'Journal',
+                path: '/journal',
+            },
+
+        ],
+    },
 
     // About
     btn: [{
@@ -313,6 +267,23 @@ const initialState = {
     ],
 
     // Shop
+
+    shop: [{
+            category: {
+                title: 'Shop by Category'
+            },
+            color: {
+                title: 'Shop by Color'
+            },
+            brand: {
+                title: 'Shop by Brand'
+            },
+            price: {
+                title: 'Shop by Price'
+            },
+        }
+
+    ],
 
     category: {
         title: 'Shop by Category'

@@ -23,9 +23,6 @@ function Shop() {
         <div className="main">
           <aside className="aside">
             <div className="block">
-              {/* {titleSet.map((titleSet, idx) => {
-                return <Varietys titles={titleSet} key={idx} />;
-              })} */}
               <Varietys titles={categorySet} />
               <Varietys titles={colorSet} />
               <Varietys titles={brandSet} />

@@ -5,9 +5,9 @@ import './css/index.css';
 import { useSelector } from 'react-redux';
 
 function Footer() {
-  const menuSet = useSelector((state) => state.layouts.menus);
-  const menuShop = useSelector((state) => state.layouts.shop);
-  const menuHelp = useSelector((state) => state.layouts.help);
+  const menuSet = useSelector((state) => state.layouts.footer.menus);
+  const menuShop = useSelector((state) => state.layouts.footer.shop);
+  const menuHelp = useSelector((state) => state.layouts.footer.help);
 
   return (
     <footer className="footer">

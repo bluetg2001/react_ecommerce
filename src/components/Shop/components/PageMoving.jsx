@@ -1,19 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 
 function PageMoving() {
   const pageNum = [1, 2, 3, 4];
 
+  const [isOnPage, setIsOnPage] = useState(false);
+  const [isOutPage, setIsOutPage] = useState(true);
+
+  const openPage = useCallback(() => {
+    setIsOnPage(true);
+    setIsOutPage(false);
+    console.log(isOnPage);
+  }, []);
+
+  const closePage = useCallback(() => {
+    setIsOnPage(false);
+    setIsOutPage(true);
+  }, []);
+
   return (
     <nav className="nav">
-      <div className="moving-pages">
-        {pageNum.map((num) => {
-          return <div className="moving-page">{num}</div>;
+      <ul className="moving-pages">
+        {pageNum.map((pageNum, idx) => {
+          return (
+            <li
+              onClick={openPage}
+              key={idx}
+              className={`moving-page ${isOnPage ? 'open-page' : 'close-page'}`}
+            >
+              {pageNum},{idx}
+            </li>
+          );
         })}
         <div className="more">
           <img src="/assets/shop/more-icon.svg" alt="..." />
         </div>
         <div className="moving-page">10</div>
-      </div>
+      </ul>
       <div className="page-info txt-bold">Products from 1 to 12 of 80</div>
     </nav>
   );
