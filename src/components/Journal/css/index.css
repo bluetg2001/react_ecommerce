@@ -9,7 +9,7 @@
   padding-bottom: 140px;
 }
 
-#root .journal .wrapper {
+#root .journal > .wrapper {
   max-width: 1600px;
   width: 100%;
   display: -webkit-box;
@@ -24,16 +24,16 @@
           justify-content: space-between;
 }
 
-#root .journal .wrapper .top > .title {
+#root .journal > .wrapper .top .title {
   font-size: 40px;
 }
 
-#root .journal .wrapper .top .bread-crumbs {
+#root .journal > .wrapper .top .bread-crumbs {
   margin-top: 16px;
   font-size: 12px;
 }
 
-#root .journal .wrapper .main {
+#root .journal > .wrapper .main {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,12 +42,12 @@
           column-gap: 42px;
 }
 
-#root .journal .wrapper .main .contents {
+#root .journal > .wrapper .main .contents {
   max-width: 1056px;
   margin-top: 137px;
 }
 
-#root .journal .wrapper .main .contents .articles {
+#root .journal > .wrapper .main .contents .articles {
   max-width: 1056px;
   display: -ms-grid;
   display: grid;
@@ -58,26 +58,26 @@
   row-gap: 24px;
 }
 
-#root .journal .wrapper .main .contents .articles .card {
+#root .journal > .wrapper .main .contents .articles .card {
   max-width: 508px;
   cursor: pointer;
 }
 
-#root .journal .wrapper .main .contents .articles .card-img {
+#root .journal > .wrapper .main .contents .articles .card-img {
   height: 402px;
   background-color: #c4c4c4;
 }
 
-#root .journal .wrapper .main .contents .articles .category {
+#root .journal > .wrapper .main .contents .articles .category {
   font-size: 13px;
   margin-top: 25px;
 }
 
-#root .journal .wrapper .main .contents .articles .desc {
+#root .journal > .wrapper .main .contents .articles .desc {
   margin-top: 22px;
 }
 
-#root .journal .wrapper .main .contents .articles .desc > .title {
+#root .journal > .wrapper .main .contents .articles .desc .title {
   font-size: 25px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -87,13 +87,13 @@
   -webkit-box-orient: vertical;
 }
 
-#root .journal .wrapper .main .contents .articles .desc > .subtitle {
+#root .journal > .wrapper .main .contents .articles .desc .subtitle {
   margin-top: 10px;
   line-height: 1.8;
   color: #767676;
 }
 
-#root .journal .wrapper .main .contents .more-btn {
+#root .journal > .wrapper .main .contents .more-btn {
   margin-top: 24px;
   width: 200px;
   height: 50px;
@@ -112,39 +112,39 @@
   cursor: pointer;
 }
 
-#root .journal .wrapper .main .journal-inside {
+#root .journal > .wrapper .main .journal-inside {
   max-width: 1056px;
   width: 100%;
   margin-top: 137px;
 }
 
-#root .journal .wrapper .main .journal-inside .img {
+#root .journal > .wrapper .main .journal-inside .img {
   width: 100%;
   height: 620px;
   background-color: #c4c4c4;
 }
 
-#root .journal .wrapper .main .journal-inside .router {
+#root .journal > .wrapper .main .journal-inside .router {
   margin-top: 57px;
   font-size: 14px;
 }
 
-#root .journal .wrapper .main .journal-inside > .desc {
+#root .journal > .wrapper .main .journal-inside .desc {
   margin-top: 45px;
 }
 
-#root .journal .wrapper .main .journal-inside > .desc > .title {
+#root .journal > .wrapper .main .journal-inside .desc .title {
   font-size: 39px;
   line-height: 1.15;
 }
 
-#root .journal .wrapper .main .journal-inside > .desc > .context {
+#root .journal > .wrapper .main .journal-inside .desc .context {
   margin-top: 38px;
   line-height: 1.88;
   color: #767676;
 }
 
-#root .journal .wrapper .main .journal-inside .tags {
+#root .journal > .wrapper .main .journal-inside .tags {
   margin-top: 43px;
   display: -ms-grid;
   display: grid;
@@ -154,7 +154,7 @@
           column-gap: 20px;
 }
 
-#root .journal .wrapper .main .journal-inside .tags .tag-btn {
+#root .journal > .wrapper .main .journal-inside .tags .tag-btn {
   width: 92px;
   height: 35px;
   background-color: black;
@@ -171,16 +171,16 @@
   cursor: pointer;
 }
 
-#root .journal .wrapper .main .journal-inside .comments {
+#root .journal > .wrapper .main .journal-inside .comments {
   margin-top: 139px;
 }
 
-#root .journal .wrapper .main .journal-inside .comments > .title {
+#root .journal > .wrapper .main .journal-inside .comments .title {
   font-size: 39px;
   line-height: 1.15;
 }
 
-#root .journal .wrapper .main .journal-inside .comments > .subtitle {
+#root .journal > .wrapper .main .journal-inside .comments .subtitle {
   margin-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,43 +190,43 @@
           justify-content: space-between;
 }
 
-#root .journal .wrapper .main .journal-inside .comments > .subtitle .person-name {
+#root .journal > .wrapper .main .journal-inside .comments .subtitle .person-name {
   line-height: 1.19;
 }
 
-#root .journal .wrapper .main .journal-inside .comments > .subtitle .date {
+#root .journal > .wrapper .main .journal-inside .comments .subtitle .date {
   line-height: 1.88;
   color: #767676;
 }
 
-#root .journal .wrapper .main .journal-inside .comments > .context {
+#root .journal > .wrapper .main .journal-inside .comments .context {
   margin-top: 20px;
   line-height: 1.88;
   color: #767676;
 }
 
-#root .journal .wrapper .main .journal-inside .comments .reply {
+#root .journal > .wrapper .main .journal-inside .comments .reply {
   margin-top: 16px;
   line-height: 1.44;
   cursor: pointer;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block {
+#root .journal > .wrapper .main .journal-inside .reply-block {
   margin-top: 126px;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block > .title {
+#root .journal > .wrapper .main .journal-inside .reply-block .title {
   font-size: 39px;
   line-height: 1.15;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block .guide {
+#root .journal > .wrapper .main .journal-inside .reply-block .guide {
   margin-top: 48px;
   line-height: 1.88;
   color: #767676;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block .input-boxes {
+#root .journal > .wrapper .main .journal-inside .reply-block .input-boxes {
   margin-top: 21px;
   display: -ms-grid;
   display: grid;
@@ -235,7 +235,7 @@
   row-gap: 26px;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block .input-boxes .input-box {
+#root .journal > .wrapper .main .journal-inside .reply-block .input-boxes .input-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,11 +245,11 @@
           flex-direction: column;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block .input-boxes .input-box > .title {
+#root .journal > .wrapper .main .journal-inside .reply-block .input-boxes .input-box .title {
   line-height: 1.44;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block .input-boxes .input-box > input {
+#root .journal > .wrapper .main .journal-inside .reply-block .input-boxes .input-box > input {
   margin-top: 13px;
   height: 30px;
   width: 60%;
@@ -257,13 +257,13 @@
   border-bottom: solid 1px #f0f0f0;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block .border-line {
+#root .journal > .wrapper .main .journal-inside .reply-block .border-line {
   margin-top: 87px;
   width: 60%;
   border: solid 1px #f0f0f0;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block .save-check {
+#root .journal > .wrapper .main .journal-inside .reply-block .save-check {
   margin-top: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,19 +275,19 @@
           column-gap: 12px;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block .save-check .check-box {
+#root .journal > .wrapper .main .journal-inside .reply-block .save-check .check-box {
   width: 11px;
   height: 11px;
   border: solid 1px #737373;
   cursor: pointer;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block .save-check > .context {
+#root .journal > .wrapper .main .journal-inside .reply-block .save-check .context {
   line-height: 1.88;
   color: #767676;
 }
 
-#root .journal .wrapper .main .journal-inside .reply-block .submit-btn {
+#root .journal > .wrapper .main .journal-inside .reply-block .submit-btn {
   margin-top: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,13 +305,13 @@
   cursor: pointer;
 }
 
-#root .journal .wrapper .main .router {
+#root .journal > .wrapper .main .router {
   margin-top: 137px;
   max-width: 507px;
   width: 100%;
 }
 
-#root .journal .wrapper .main .router .journal-input {
+#root .journal > .wrapper .main .router .journal-input {
   position: relative;
   height: 33px;
   display: -webkit-box;
@@ -322,49 +322,49 @@
           align-items: center;
 }
 
-#root .journal .wrapper .main .router .journal-input > input {
+#root .journal > .wrapper .main .router .journal-input > input {
   width: 100%;
   height: 100%;
   border-style: none;
   border-bottom: solid 1px #f0f0f0;
 }
 
-#root .journal .wrapper .main .router .journal-input > input::-webkit-input-placeholder {
+#root .journal > .wrapper .main .router .journal-input > input::-webkit-input-placeholder {
   font-size: 14px;
   color: #767676;
 }
 
-#root .journal .wrapper .main .router .journal-input > input:-ms-input-placeholder {
+#root .journal > .wrapper .main .router .journal-input > input:-ms-input-placeholder {
   font-size: 14px;
   color: #767676;
 }
 
-#root .journal .wrapper .main .router .journal-input > input::-ms-input-placeholder {
+#root .journal > .wrapper .main .router .journal-input > input::-ms-input-placeholder {
   font-size: 14px;
   color: #767676;
 }
 
-#root .journal .wrapper .main .router .journal-input > input::placeholder {
+#root .journal > .wrapper .main .router .journal-input > input::placeholder {
   font-size: 14px;
   color: #767676;
 }
 
-#root .journal .wrapper .main .router .journal-input .search-icon {
+#root .journal > .wrapper .main .router .journal-input .search-icon {
   position: absolute;
   right: 0px;
   cursor: pointer;
 }
 
-#root .journal .wrapper .main .router .recent-posts {
+#root .journal > .wrapper .main .router .recent-posts {
   margin-top: 58px;
 }
 
-#root .journal .wrapper .main .router .recent-posts > .title {
+#root .journal > .wrapper .main .router .recent-posts .title {
   font-size: 19px;
   line-height: 1.11;
 }
 
-#root .journal .wrapper .main .router .recent-posts > .wrapper {
+#root .journal > .wrapper .main .router .recent-posts .wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[1];
@@ -374,7 +374,7 @@
   width: 100%;
 }
 
-#root .journal .wrapper .main .router .recent-posts > .wrapper .recent-post > div {
+#root .journal > .wrapper .main .router .recent-posts .wrapper .recent-post > div {
   width: 100%;
   row-gap: 16px;
   height: 43px;
@@ -385,43 +385,43 @@
   line-height: 1.87;
 }
 
-#root .journal .wrapper .main .router .recent-posts > .wrapper .recent-post > div > span {
+#root .journal > .wrapper .main .router .recent-posts .wrapper .recent-post > div > span {
   color: #767676;
 }
 
-#root .journal .wrapper .main .router .archives {
+#root .journal > .wrapper .main .router .archives {
   margin-top: 36px;
 }
 
-#root .journal .wrapper .main .router .archives > .title {
+#root .journal > .wrapper .main .router .archives .title {
   font-size: 20px;
   line-height: 1.15;
 }
 
-#root .journal .wrapper .main .router .archives .archive {
+#root .journal > .wrapper .main .router .archives .archive {
   margin-top: 42px;
   width: 100%;
   height: 44px;
   border-bottom: solid 1px #f0f0f0;
 }
 
-#root .journal .wrapper .main .router .archives .archive > li {
+#root .journal > .wrapper .main .router .archives .archive > li {
   margin-left: 15px;
   list-style-type: disc;
   line-height: 1.88;
 }
 
-#root .journal .wrapper .main .router .categories {
+#root .journal > .wrapper .main .router .categories {
   margin-top: 103px;
   width: 100%;
 }
 
-#root .journal .wrapper .main .router .categories > .title {
+#root .journal > .wrapper .main .router .categories .title {
   font-size: 20px;
   line-height: 1.15;
 }
 
-#root .journal .wrapper .main .router .categories > .wrapper {
+#root .journal > .wrapper .main .router .categories .wrapper {
   width: 100%;
   margin-top: 45px;
   display: -ms-grid;
@@ -431,7 +431,7 @@
   row-gap: 29.5px;
 }
 
-#root .journal .wrapper .main .router .categories > .wrapper .category {
+#root .journal > .wrapper .main .router .categories .wrapper .category {
   width: 100%;
   width: 100%;
   height: 41.5px;
@@ -439,17 +439,17 @@
   border-bottom: solid 1px #f0f0f0;
 }
 
-#root .journal .wrapper .main .router .metas {
+#root .journal > .wrapper .main .router .metas {
   margin-top: 101.5px;
   width: 100%;
 }
 
-#root .journal .wrapper .main .router .metas > .title {
+#root .journal > .wrapper .main .router .metas .title {
   font-size: 20px;
   line-height: 1.15;
 }
 
-#root .journal .wrapper .main .router .metas > .wrapper {
+#root .journal > .wrapper .main .router .metas .wrapper {
   width: 100%;
   margin-top: 42px;
   display: -ms-grid;
@@ -459,23 +459,23 @@
   row-gap: 26.5px;
 }
 
-#root .journal .wrapper .main .router .metas > .wrapper .meta {
+#root .journal > .wrapper .main .router .metas .wrapper .meta {
   width: 100%;
   height: 34.5px;
   line-height: 1.88;
   border-bottom: solid 1px #f0f0f0;
 }
 
-#root .journal .wrapper .main .router .tags {
+#root .journal > .wrapper .main .router .tags {
   margin-top: 55.5px;
 }
 
-#root .journal .wrapper .main .router .tags > .title {
+#root .journal > .wrapper .main .router .tags .title {
   font-size: 20px;
   line-height: 1.15;
 }
 
-#root .journal .wrapper .main .router .tags .tags-btns {
+#root .journal > .wrapper .main .router .tags .tags-btns {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (92px)[3];
@@ -484,7 +484,7 @@
           column-gap: 20.5px;
 }
 
-#root .journal .wrapper .main .router .tags .tags-btns .tag-btn {
+#root .journal > .wrapper .main .router .tags .tags-btns .tag-btn {
   margin-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;

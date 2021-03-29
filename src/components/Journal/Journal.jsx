@@ -27,8 +27,6 @@ function Journal() {
         </div>
         <div className="main">
           <JournalMain />
-
-          {/* <JournalMain /> */}
           <aside className="router">
             <JournalInput />
             <div className="recent-posts">

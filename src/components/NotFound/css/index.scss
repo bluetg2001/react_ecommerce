@@ -8,16 +8,16 @@ $grey-2: #767676;
         padding-top: 104px;
         padding-bottom: 134px;
 
-        .wrapper {
+        &>.wrapper {
             width: 1600px;
 
-            &>.title {
+            .title {
                 font-size: 200px;
                 font-weight: bold;
                 line-height: 1.15;
             }
 
-            &>.context {
+            .context {
                 width: 644px;
                 height: 60px;
                 line-height: 1.88;
