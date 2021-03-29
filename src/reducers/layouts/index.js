@@ -170,19 +170,19 @@ const initialState = {
         },
         {
             title: 'Shop',
-            path: '/Shop',
+            path: '/shop',
         },
         {
             title: 'About',
-            path: '/About',
+            path: '/about',
         },
         {
             title: 'Contacts',
-            path: '/Contacts',
+            path: '/contacts',
         },
         {
             title: 'Journal',
-            path: '/Journal',
+            path: '/journal',
         },
 
     ],
@@ -313,35 +313,35 @@ const initialState = {
             alt : 'dropup-icon',
             
             contents: [{
-                    context: 'Category1',
+                    context: 'Color1',
                     btn: 'assets/shop/plus-icon.svg',
                     alt: 'plus-icon',
                     color_display : 'block',
                     color : '#000000',
                 },
                 {
-                    context: 'Category2',
+                    context: 'Color2',
                     btn: 'none',
                     alt: '',
                     color_display : 'block',
                     color : '#ff8686',
                 },
                 {
-                    context: 'Category3',
+                    context: 'Color3',
                     btn: 'assets/shop/plus-icon.svg',
                     alt: 'plus-icon',
                     color_display : 'block',
                     color : '#7ed321',
                 },
                 {
-                    context: 'Category4',
+                    context: 'Color4',
                     btn: 'none',
                     alt: '',
                     color_display : 'block',
                     color : '#b6b6b6',
                 },
                 {
-                    context: 'Category5',
+                    context: 'Color5',
                     btn: 'none',
                     alt: '',
                     color_display : 'block',
