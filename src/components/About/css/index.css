@@ -8,7 +8,7 @@
           justify-content: center;
 }
 
-#root .about .wrapper {
+#root .about > .wrapper {
   width: 1600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +19,7 @@
           flex-direction: column;
 }
 
-#root .about .wrapper > .title-block {
+#root .about > .wrapper .block {
   margin-top: 128px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,18 +30,18 @@
           flex-direction: column;
 }
 
-#root .about .wrapper > .title-block > .title {
+#root .about > .wrapper .block .title {
   font-size: 49px;
 }
 
-#root .about .wrapper > .title-block > .path {
+#root .about > .wrapper .block .path {
   margin-top: 16px;
   font-size: 12px;
   line-height: 1.17;
   color: #767676;
 }
 
-#root .about .wrapper > .contents {
+#root .about > .wrapper .contents {
   margin-top: 137px;
   width: 100%;
   height: 776px;
@@ -53,7 +53,7 @@
           column-gap: 40px;
 }
 
-#root .about .wrapper > .contents > .content {
+#root .about > .wrapper .contents .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +69,7 @@
           box-sizing: border-box;
 }
 
-#root .about .wrapper > .contents > .content > .btn {
+#root .about > .wrapper .contents .content .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,7 +87,7 @@
   cursor: pointer;
 }
 
-#root .about .wrapper > .intro {
+#root .about > .wrapper .intro {
   margin-top: 129px;
   width: 100%;
   height: 104px;
@@ -96,7 +96,7 @@
   color: black;
 }
 
-#root .about .wrapper > .explains {
+#root .about > .wrapper .explains {
   margin-top: 121px;
   margin-bottom: 126px;
   display: -ms-grid;
@@ -108,7 +108,7 @@
           column-gap: 41px;
 }
 
-#root .about .wrapper > .explains > .explain {
+#root .about > .wrapper .explains .explain {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,13 +119,13 @@
           flex-direction: column;
 }
 
-#root .about .wrapper > .explains > .explain > .title {
+#root .about > .wrapper .explains .explain .title {
   font-size: 25px;
   font-weight: bold;
   line-height: 1.44;
 }
 
-#root .about .wrapper > .explains > .explain > .context {
+#root .about > .wrapper .explains .explain .context {
   margin-top: 19px;
   height: 150px;
   line-height: 1.88;

@@ -1,14 +1,14 @@
 import React, { useCallback, useState } from 'react';
 
-function sale(fl, dis) {
-  if (dis) {
-    return (fl * (100 - dis)) / 100;
-  } else {
-    return fl;
-  }
-}
-
 function ShopItem({ contents: { title, color, type, price, percent } }) {
+  function sale(fl, dis) {
+    if (dis) {
+      return (fl * (100 - dis)) / 100;
+    } else {
+      return fl;
+    }
+  }
+
   const [isOptionOpen, setIsOptionOpen] = useState(false);
 
   const showOptions = useCallback(() => {

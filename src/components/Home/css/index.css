@@ -558,6 +558,7 @@
 
 #root .home .brands > .wrapper .contents > .content {
   background-color: #c4c4c4;
+  cursor: pointer;
 }
 
 #root .home .journal {

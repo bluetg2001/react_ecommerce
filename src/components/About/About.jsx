@@ -8,7 +8,7 @@ function About() {
   return (
     <div className="about">
       <div className="wrapper">
-        <div className="title-block">
+        <div className="block">
           <div className="title txt-bold">About</div>
           <div className="path">Home &gt; About</div>
         </div>
