@@ -6,19 +6,23 @@ import Items from './components/Items/Items';
 import Gauge from './components/Gauge/gauge';
 
 function Home() {
-  const final_offerSet = useSelector((state) => state.layouts.final_offer);
+  const finalOfferSet = useSelector((state) => state.layouts.home.finalOffer);
+  const arrivalsSet = useSelector(
+    (state) => state.layouts.home.contents.newArrivals,
+  );
+  const bestSellersSet = useSelector(
+    (state) => state.layouts.home.contents.bestSellers,
+  );
+  const offersSet = useSelector((state) => state.layouts.home.contents.offers);
   const phonesSet = useSelector((state) => state.layouts.phones);
   const salesSet = useSelector((state) => state.layouts.sales);
-  const arrivalsSet = useSelector((state) => state.layouts.new_arrivals);
-  const best_sellers = useSelector((state) => state.layouts.best_sellers);
-  const offers = useSelector((state) => state.layouts.offers);
 
   return (
     <div className="home">
       <div className="banner">
         <div className="wrapper">
           <Gauge />
-          <Sale sales={final_offerSet} />
+          <Sale sales={finalOfferSet} />
         </div>
       </div>
 
@@ -59,7 +63,7 @@ function Home() {
       </div>
 
       <Items item={arrivalsSet} />
-      <Items item={best_sellers} />
+      <Items item={bestSellersSet} />
 
       <div className="to-phone">
         <div className="title txt-bold">Phone of the Year</div>
@@ -70,7 +74,7 @@ function Home() {
         <div className="btn txt-bold">Shop Now</div>
       </div>
 
-      <Items item={offers} />
+      <Items item={offersSet} />
 
       <div className="brands">
         <div className="wrapper">

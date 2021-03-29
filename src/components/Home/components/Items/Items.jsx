@@ -3,7 +3,9 @@ import Item from './components/Item/Item';
 import { useSelector } from 'react-redux';
 
 function Items({ item }) {
-  const contextSet = useSelector((state) => state.layouts.item);
+  const contextSet = useSelector(
+    (state) => state.layouts.home.contents.newArrivals.item,
+  );
 
   return (
     <div className="block">

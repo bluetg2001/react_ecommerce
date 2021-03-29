@@ -2,51 +2,131 @@ const initialState = {
     // 주석으로 사용한 컴포넌트를 표시
 
     // Home
-    final_offer: {
-        title: 'Final Offer',
-        percents: '50%',
-        context: 'furniture items!'
-    },
-
-    new_arrivals: {
-        title: 'New Arrivals',
-    },
-
-    best_sellers: {
-        title: 'Our Bestsellers',
-    },
-
-    offers: {
-        title: 'Special Offers'
-    },
-
-    journal: {
-        title: 'Journal'
-    },
-
-
-    item: [{
-            title: 'Basic Crew Neck Tee',
-            price: '$44.00',
-            detail: 'Black'
+    home: {
+        finalOffer: {
+            title: 'Final Offer',
+            percents: '50%',
+            context: 'furniture items!'
         },
-        {
-            title: 'Basic Crew Neck Tee',
-            price: '$44.00',
-            detail: 'Black'
-        },
-        {
-            title: 'Basic Crew Neck Tee',
-            price: '$44.00',
-            detail: 'Black'
-        },
-        {
-            title: 'Basic Crew Neck Tee',
-            price: '$44.00',
-            detail: 'Black'
-        },
-    ],
 
+        contents: {
+            newArrivals: {
+                title: 'New Arrivals',
+                item: [{
+                        title: 'Basic Crew Neck Tee',
+                        price: '44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '$40',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '$44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '$44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                ],
+
+            },
+            bestSellers: {
+                title: 'Our Bestsellers',
+                item: [{
+                        title: 'Basic Crew Neck Tee',
+                        price: '44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '40',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                ]
+            },
+            offers: {
+                title: 'Special Offers',
+                item: [{
+                        title: 'Basic Crew Neck Tee',
+                        price: '44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '40',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                ],
+
+            },
+
+            journal: {
+                title: 'Journal',
+                item: [{
+                        title: 'Basic Crew Neck Tee',
+                        price: '44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '40',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                    {
+                        title: 'Basic Crew Neck Tee',
+                        price: '44',
+                        detail: 'Black',
+                        event : 'New'
+                    },
+                ],
+            },
+        }
+    },
 
     //Sale 
     phones: {
@@ -323,54 +403,54 @@ const initialState = {
     // Journal
     journal: {
         articles: [{
-                path : '/Journal/1',
-                categories : 'Category',
+                path: '/Journal/1',
+                categories: 'Category',
                 title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             },
             {
-                path : '/Journal/2',
-                categories : 'Category',
+                path: '/Journal/2',
+                categories: 'Category',
                 title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             },
             {
-                path : '/Journal/3',
-                categories : 'Category',
+                path: '/Journal/3',
+                categories: 'Category',
                 title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             },
             {
-                path : '/Journal/4',
-                categories : 'Category',
+                path: '/Journal/4',
+                categories: 'Category',
                 title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             },
             {
-                path : '/Journal/5',
-                categories : 'Category',
-                title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-                desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            },
-            {   
-                path : '/Journal/6',
-                categories : 'Category',
+                path: '/Journal/5',
+                categories: 'Category',
                 title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             },
             {
-                path : '/Journal/7',
-                categories : 'Category',
+                path: '/Journal/6',
+                categories: 'Category',
                 title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             },
             {
-                path : '/Journal/8',
-                categories : 'Category',
+                path: '/Journal/7',
+                categories: 'Category',
                 title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             },
-            
+            {
+                path: '/Journal/8',
+                categories: 'Category',
+                title: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            },
+
         ],
 
         recent: [{
