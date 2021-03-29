@@ -182,7 +182,7 @@ $greyblue : #69b2d3;
 
                     }
 
-                    &>.shop-btn {
+                    .shop-btn {
                         margin-top: 30px;
                         display: flex;
                         justify-content: center;
@@ -194,13 +194,13 @@ $greyblue : #69b2d3;
                     }
                 }
 
-                &>.left {
-                    &>.sale {
+                .left {
+                    .sale {
                         height: 100%;
                     }
                 }
 
-                &>.right {
+                .right {
                     height: 100%;
                     display: grid;
                     grid-template-columns: repeat(1, 1fr);
@@ -218,17 +218,17 @@ $greyblue : #69b2d3;
             display: flex;
             justify-content: center;
 
-            &>.wrapper {
+            .wrapper {
                 max-width: 1600px;
                 width: 100%;
                 height: 100%;
 
-                &>.context {
+                .context {
                     width: 100%;
                     height: 45px;
                     position: relative;
 
-                    &>.title {
+                    .title {
                         position: absolute;
                         left: 0px;
                         font-size: 39px;
@@ -252,21 +252,23 @@ $greyblue : #69b2d3;
                     width: 100%;
                     height: 100%;
 
-                    &>.item {
+                    .item {
                         display: grid;
                         grid-template-columns: repeat(4, 1fr);
                         column-gap: 40px;
 
-                        &>.contents {
-                            &>.content {
+                        .contents {
+                            .content {
+                                position: relative;
                                 padding-left: 20px;
                                 padding-top: 20px;
                                 box-sizing: border-box;
                                 height: 370px;
                                 background-color: $grey-4;
                                 cursor: pointer;
+                                 overflow: hidden;
 
-                                .new {
+                                .badge {
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
@@ -276,25 +278,83 @@ $greyblue : #69b2d3;
                                     font-size: 14px;
                                     color: white;
                                 }
+
+                                .options {
+                                    width: 100%;
+                                    height: 156px;
+                                    background-color: white;
+                                    position: absolute;
+                                    bottom: 0px;
+                                    left: 0px;
+                                    transition: bottom 0.3s ease;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-end;
+                                    padding: 26px 24px 27px 0;
+                                    box-sizing: border-box;
+
+                                    .lists {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-end;
+                                        color: $grey-2;
+
+                                        .wish-list {
+                                            display: flex;
+                                            column-gap: 8px;
+                                            line-height: 1.19;
+                                            cursor: pointer;
+
+                                        }
+
+                                        .compare {
+                                            display: flex;
+                                            column-gap: 8px;
+                                            line-height: 1.19;
+                                            cursor: pointer;
+
+                                        }
+
+                                        .add-cart {
+                                            display: flex;
+                                            column-gap: 8px;
+                                            line-height: 1.19;
+                                            cursor: pointer;
+                                        }
+                                    }
+
+                                }
+
+                                .open-option {
+                                    bottom: 0px;
+                                }
+
+                                .close-option {
+                                    bottom: -156px;
+                                }
                             }
 
                             &>.context {
                                 margin-top: 26px;
-                                display: flex;
-                                justify-content: space-between;
+                                position: relative;
 
-                                &>.title {
+                                .title {
+                                    position: absolute;
+                                    left: 0px;
                                     font-size: 20px;
                                     line-height: 1.15;
                                 }
 
-                                &>.price {
+                                .price {
+                                    position: absolute;
+                                    right: 0px;
                                     line-height: 1.88;
                                     color: $grey-2;
                                 }
                             }
 
-                            &>.detail {
+                            .detail {
                                 margin-top: 22px;
                                 color: $grey-2;
                             }
@@ -306,7 +366,7 @@ $greyblue : #69b2d3;
 
         //
 
-        &>.to-phone {
+        .to-phone {
             margin-top: 135px;
             width: 100%;
             height: 370px;
@@ -343,7 +403,7 @@ $greyblue : #69b2d3;
             }
         }
 
-        &>.brands {
+        .brands {
             margin-top: 126px;
             display: flex;
             flex-direction: column;
@@ -354,17 +414,17 @@ $greyblue : #69b2d3;
             display: flex;
 
 
-            .wrapper {
+            &>.wrapper {
                 max-width: 1600px;
                 width: 100%;
                 height: 100%;
 
-                &>.title {
+                .title {
                     font-size: 39px;
                     line-height: 1.15;
                 }
 
-                &>.context {
+                .context {
                     margin-top: 47px;
                     width: 643px;
                     height: 60px;
@@ -372,7 +432,7 @@ $greyblue : #69b2d3;
                     color: $grey-2;
                 }
 
-                &>.contents {
+                .contents {
                     width: 100%;
                     height: 320px;
                     margin-top: 45px;
@@ -387,7 +447,7 @@ $greyblue : #69b2d3;
             }
         }
 
-        &>.journal {
+        .journal {
             margin-top: 131px;
             margin-bottom: 104px;
             width: 100%;
@@ -399,21 +459,21 @@ $greyblue : #69b2d3;
                 max-width: 1600px;
                 width: 100%;
 
-                &>.context {
+                .context {
                     width: 100%;
                     height: 45px;
                     display: flex;
                     align-items: center;
                     position: relative;
 
-                    &>.title {
+                    .title {
                         position: absolute;
                         left: 0px;
                         font-size: 39px;
                         line-height: 1.15;
                     }
 
-                    &>.view-all {
+                    .view-all {
                         position: absolute;
                         right: 0px;
                         line-height: 1.88;
@@ -422,7 +482,7 @@ $greyblue : #69b2d3;
                     }
                 }
 
-                &>.contents {
+                .contents {
                     margin-top: 51px;
                     width: 100%;
                     // height: 613px;
@@ -430,37 +490,37 @@ $greyblue : #69b2d3;
                     grid-template-columns: repeat(3, 1fr);
                     column-gap: 35.2px;
 
-                &>.block {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-
-                    &>.content {
+                    .block {
                         width: 100%;
-                        height: 401.6px;
-                        background-color: $grey-3;
-                        cursor: pointer;
-                    }
+                        display: flex;
+                        flex-direction: column;
 
-                    &>.category {
-                        margin-top: 25.4px;
-                        font-size: 14px;
-                    }
+                        .content {
+                            width: 100%;
+                            height: 401.6px;
+                            background-color: $grey-3;
+                            cursor: pointer;
+                        }
 
-                    &>.title {
-                        margin-top: 21px;
-                        font-size: 25px;
-                        line-height: 1.44;
-                    }
+                        .category {
+                            margin-top: 25.4px;
+                            font-size: 14px;
+                        }
 
-                    &>.context {
-                        margin-top: 10px;
-                        line-height: 1.88;
-                        color: $grey-2;
+                        .title {
+                            margin-top: 21px;
+                            font-size: 25px;
+                            line-height: 1.44;
+                        }
+
+                        .context {
+                            margin-top: 10px;
+                            line-height: 1.88;
+                            color: $grey-2;
+                        }
                     }
                 }
             }
         }
     }
-}
 }

@@ -1,14 +1,67 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 
-function Item({ context: { title, price, detail, event } }) {
+function Item({ item: { title, price, detail, event, percent } }) {
+  function sale(fl, dis) {
+    if (dis) {
+      return (fl * (100 - dis)) / 100;
+    } else {
+      return fl;
+    }
+  }
+
+  const [isOptionOpen, setIsOptionOpen] = useState(false);
+
+  const showOptions = useCallback(() => {
+    setIsOptionOpen(true);
+  }, []);
+
+  const closeOptions = useCallback(() => {
+    setIsOptionOpen(false);
+  }, []);
+
   return (
-    <div className="contents">
+    <div
+      className="contents"
+      onMouseOver={showOptions}
+      onMouseOut={closeOptions}
+    >
       <div className="content">
-        <div className="new txt-bold">{event}</div>
+        {event ? (
+          event === 'New' ? (
+            <div className="badge txt-bold">{event}</div>
+          ) : (
+            <div className="badge txt-bold">-{percent}%</div>
+          )
+        ) : undefined}
+
+        <div
+          className={`options ${isOptionOpen ? 'open-option' : 'close-option'}`}
+        >
+          <ul className="lists">
+            <li className="wish-list">
+              <div className="context">Add to Wish List</div>
+              <div className="icon">
+                <img src="/assets/shop/heart-icon.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li className="compare">
+              <div className="context">Compare</div>
+              <div className="icon">
+                <img src="/assets/shop/compare-icon.svg" alt="compare-icon" />
+              </div>
+            </li>
+            <li className="add-cart">
+              <div className="context">Add to Cart</div>
+              <div className="icon">
+                <img src="/assets/shop/cart-icon.svg" alt="cart-icon" />
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="context">
         <div className="title txt-bold">{title}</div>
-        <div className="price">{price}</div>
+        <div className="price">${sale(price, percent).toFixed(2)}</div>
       </div>
       <div className="detail">{detail}</div>
     </div>

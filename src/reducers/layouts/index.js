@@ -16,25 +16,29 @@ const initialState = {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
-                        price: '$40',
+                        price: '40',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
-                        price: '$44',
+                        price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
-                        price: '$44',
+                        price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                 ],
 
@@ -45,25 +49,29 @@ const initialState = {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '40',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                 ]
             },
@@ -73,25 +81,29 @@ const initialState = {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '40',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                 ],
 
@@ -103,25 +115,29 @@ const initialState = {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '40',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                     {
                         title: 'Basic Crew Neck Tee',
                         price: '44',
                         detail: 'Black',
-                        event : 'New'
+                        event : 'New',
+                        percent : '0'
                     },
                 ],
             },

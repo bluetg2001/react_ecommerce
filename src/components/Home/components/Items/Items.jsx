@@ -1,23 +1,18 @@
 import React from 'react';
 import Item from './components/Item/Item';
-import { useSelector } from 'react-redux';
 
-function Items({ item }) {
-  const contextSet = useSelector(
-    (state) => state.layouts.home.contents.newArrivals.item,
-  );
-
+function Items({ item: { title, item } }) {
   return (
     <div className="block">
       <div className="wrapper">
         <div className="context">
-          <div className="title txt-bold">{item.title}</div>
+          <div className="title txt-bold">{title}</div>
           <div className="view-all">View All</div>
         </div>
         <div className="items">
           <div className="item">
-            {contextSet.map((contextSet, idx) => {
-              return <Item context={contextSet} key={idx} />;
+            {item.map((item, idx) => {
+              return <Item item={item} key={idx} />;
             })}
           </div>
         </div>
