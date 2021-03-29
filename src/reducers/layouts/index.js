@@ -268,22 +268,164 @@ const initialState = {
 
     // Shop
 
-    shop: [{
-            category: {
-                title: 'Shop by Category'
-            },
-            color: {
-                title: 'Shop by Color'
-            },
-            brand: {
-                title: 'Shop by Brand'
-            },
-            price: {
-                title: 'Shop by Price'
-            },
-        }
+    shop: {
+        category: {
+            title: 'Shop by Category',
+            icon : 'none',
+            alt : '',
+            
+            contents: [{
+                    context: 'Category1',
+                    btn: 'assets/shop/plus-icon.svg',
+                    alt: 'plus-icon',
+                    color_display : 'none',
+                },
+                {
+                    context: 'Category2',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+                {
+                    context: 'Category3',
+                    btn: 'assets/shop/plus-icon.svg',
+                    alt: 'plus-icon',
+                    color_display : 'none',
+                },
+                {
+                    context: 'Category4',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+                {
+                    context: 'Category5',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+            ]
+        },
+        color: {
+            
+            title: 'Shop by Color',
+            icon : '/assets/shop/dropup-icon.svg',
+            alt : 'dropup-icon',
+            
+            contents: [{
+                    context: 'Category1',
+                    btn: 'assets/shop/plus-icon.svg',
+                    alt: 'plus-icon',
+                    color_display : 'block',
+                    color : '#000000',
+                },
+                {
+                    context: 'Category2',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'block',
+                    color : '#ff8686',
+                },
+                {
+                    context: 'Category3',
+                    btn: 'assets/shop/plus-icon.svg',
+                    alt: 'plus-icon',
+                    color_display : 'block',
+                    color : '#7ed321',
+                },
+                {
+                    context: 'Category4',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'block',
+                    color : '#b6b6b6',
+                },
+                {
+                    context: 'Category5',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'block',
+                    color : '#15cba5',
+                },
+            ]
+        },
+        brand: {
+            title: 'Shop by Brand',
+            icon : '/assets/shop/dropup-icon.svg',
+            alt : 'dropup-icon',
+            
+            contents: [{
+                    context: 'Brand1',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+                {
+                    context: 'Brand2',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+                {
+                    context: 'Brand3',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+                {
+                    context: 'Brand4',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+                {
+                    context: 'Brand5',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+            ]
+        },
+        price: {
+            title: 'Shop by Price',
+            icon : 'none',
+            alt : '',
+            
+            contents: [{
+                    context: '$0.00 - $9.99',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+                {
+                    context: '$10.00 - $19.99',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+                {
+                    context: '$20.00 - $29.99',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+                {
+                    context: '$30.00 - $39.99',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+                {
+                    context: '$40.00 - $49.99',
+                    btn: 'none',
+                    alt: '',
+                    color_display : 'none',
+                },
+            ]
+        },
+    },
 
-    ],
+
 
     category: {
         title: 'Shop by Category'

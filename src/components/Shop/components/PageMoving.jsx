@@ -27,7 +27,7 @@ function PageMoving() {
               key={idx}
               className={`moving-page ${isOnPage ? 'open-page' : 'close-page'}`}
             >
-              {pageNum},{idx}
+              {pageNum}
             </li>
           );
         })}

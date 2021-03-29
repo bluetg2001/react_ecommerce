@@ -21,18 +21,18 @@
   margin-top: 128px;
 }
 
-#root .shop > .wrapper > .title > .context {
+#root .shop > .wrapper > .title .context {
   font-size: 49px;
 }
 
-#root .shop > .wrapper > .title > .path {
+#root .shop > .wrapper > .title .path {
   margin-top: 16px;
   font-size: 12px;
   line-height: 1.17;
   color: #767676;
 }
 
-#root .shop > .wrapper > .main {
+#root .shop > .wrapper .main {
   width: 100%;
   margin-top: 133px;
   display: -webkit-box;
@@ -42,7 +42,7 @@
           column-gap: 38.4px;
 }
 
-#root .shop > .wrapper > .main > .aside {
+#root .shop > .wrapper .main .aside {
   width: 369.6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,7 +53,7 @@
           flex-direction: column;
 }
 
-#root .shop > .wrapper > .main > .aside > .block {
+#root .shop > .wrapper .main .aside .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,7 @@
   row-gap: 56px;
 }
 
-#root .shop > .wrapper > .main > .aside > .block > .varietys {
+#root .shop > .wrapper .main .aside .block .varietys {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,60 +75,92 @@
           flex-direction: column;
 }
 
-#root .shop > .wrapper > .main > .aside > .block > .varietys > .title {
-  margin-bottom: 42px;
+#root .shop > .wrapper .main .aside .block .varietys > .title {
+  position: relative;
+  height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+#root .shop > .wrapper .main .aside .block .varietys > .title .context {
+  position: absolute;
+  left: 0px;
   font-size: 20px;
   line-height: 1.15;
 }
 
-#root .shop > .wrapper > .main > .aside > .block > .varietys > .items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#root .shop > .wrapper > .main > .aside > .block > .varietys > .items > .item {
-  position: relative;
-  width: 100%;
-  height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  border-bottom: solid 1px #f0f0f0;
-  margin-top: 27px;
-  cursor: pointer;
-}
-
-#root .shop > .wrapper > .main > .aside > .block > .varietys > .items > .item > .context {
-  position: absolute;
-  left: 0px;
-  line-height: 1.88;
-  color: #767676;
-}
-
-#root .shop > .wrapper > .main > .aside > .block > .varietys > .items > .item > .plus-icon {
+#root .shop > .wrapper .main .aside .block .varietys > .title .icon {
   position: absolute;
   right: 0px;
 }
 
-#root .shop > .wrapper > .main > .section {
+#root .shop > .wrapper .main .aside .block .varietys .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  border-bottom: solid 1px #f0f0f0;
+  margin-top: 27px;
+  padding-bottom: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+#root .shop > .wrapper .main .aside .block .varietys .item > .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0px;
+}
+
+#root .shop > .wrapper .main .aside .block .varietys .item > .content .color {
+  margin-right: 10px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+#root .shop > .wrapper .main .aside .block .varietys .item > .content .context {
+  line-height: 1.88;
+  color: #767676;
+}
+
+#root .shop > .wrapper .main .aside .block .varietys .item .plus-icon {
+  position: absolute;
+  right: 0px;
+}
+
+#root .shop > .wrapper .main .aside .block .varietys .item .plus-icon > img {
+  width: 16px;
+}
+
+#root .shop > .wrapper .main .section {
   width: calc(100% - 408px);
 }
 
-#root .shop > .wrapper > .main > .section > .sort {
+#root .shop > .wrapper .main .section .sort {
   width: 100%;
   height: 36px;
   position: relative;
 }
 
-#root .shop > .wrapper > .main > .section > .sort > .sort-style {
+#root .shop > .wrapper .main .section .sort .sort-style {
   position: absolute;
   left: 0px;
   display: -webkit-box;
@@ -138,13 +170,13 @@
           column-gap: 20px;
 }
 
-#root .shop > .wrapper > .main > .section > .sort > .sort-style > div {
+#root .shop > .wrapper .main .section .sort .sort-style > div {
   cursor: pointer;
   width: 36px;
   height: 36px;
 }
 
-#root .shop > .wrapper > .main > .section > .sort > .selection {
+#root .shop > .wrapper .main .section .sort .selection {
   -webkit-column-gap: 40px;
           column-gap: 40px;
   position: absolute;
@@ -160,7 +192,7 @@
   color: #767676;
 }
 
-#root .shop > .wrapper > .main > .section > .sort > .selection > .sort-by {
+#root .shop > .wrapper .main .section .sort .selection .sort-by {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +206,7 @@
           column-gap: 15px;
 }
 
-#root .shop > .wrapper > .main > .section > .sort > .selection > .sort-by > .selection-box {
+#root .shop > .wrapper .main .section .sort .selection .sort-by .selection-box {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,27 +220,27 @@
   cursor: pointer;
 }
 
-#root .shop > .wrapper > .main > .section > .sort > .selection > .sort-by > .selection-box > .kinds {
+#root .shop > .wrapper .main .section .sort .selection .sort-by .selection-box .kinds {
   position: absolute;
   left: 21px;
 }
 
-#root .shop > .wrapper > .main > .section > .sort > .selection > .sort-by > .selection-box > .icon {
+#root .shop > .wrapper .main .section .sort .selection .sort-by .selection-box > .icon {
   position: absolute;
   right: 18px;
 }
 
-#root .shop > .wrapper > .main > .section > .sort > .selection > .sort-by .big-size {
+#root .shop > .wrapper .main .section .sort .selection .sort-by .big-size {
   width: 239px;
   height: 36px;
 }
 
-#root .shop > .wrapper > .main > .section > .sort > .selection > .sort-by .small-size {
+#root .shop > .wrapper .main .section .sort .selection .sort-by .small-size {
   width: 139px;
   height: 36px;
 }
 
-#root .shop > .wrapper > .main > .section > .items {
+#root .shop > .wrapper .main .section > .items {
   margin-top: 60px;
   width: 100%;
   display: -ms-grid;
@@ -220,11 +252,11 @@
   row-gap: 55px;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item {
+#root .shop > .wrapper .main .section > .items .item {
   width: 100%;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .img-box {
+#root .shop > .wrapper .main .section > .items .item .img-box {
   cursor: pointer;
   position: relative;
   padding-left: 20px;
@@ -236,7 +268,7 @@
   overflow: hidden;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .img-box .badge {
+#root .shop > .wrapper .main .section > .items .item .img-box .badge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,7 +285,7 @@
   color: white;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .img-box .options {
+#root .shop > .wrapper .main .section > .items .item .img-box .options {
   width: 100%;
   height: 156px;
   background-color: white;
@@ -277,7 +309,7 @@
           box-sizing: border-box;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .img-box .options .lists {
+#root .shop > .wrapper .main .section > .items .item .img-box .options .lists {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,7 +323,7 @@
           align-items: flex-end;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .img-box .options .lists .wish-list {
+#root .shop > .wrapper .main .section > .items .item .img-box .options .lists .wish-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +334,7 @@
   cursor: pointer;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .img-box .options .lists .compare {
+#root .shop > .wrapper .main .section > .items .item .img-box .options .lists .compare {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,7 +346,7 @@
   cursor: pointer;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .img-box .options .lists .add-cart {
+#root .shop > .wrapper .main .section > .items .item .img-box .options .lists .add-cart {
   margin-top: 23px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,15 +357,15 @@
   cursor: pointer;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .img-box .open-option {
+#root .shop > .wrapper .main .section > .items .item .img-box .open-option {
   bottom: 0px;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .img-box .close-option {
+#root .shop > .wrapper .main .section > .items .item .img-box .close-option {
   bottom: -156px;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .context {
+#root .shop > .wrapper .main .section > .items .item > .context {
   margin-top: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,22 +375,22 @@
           justify-content: space-between;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .context > .title {
+#root .shop > .wrapper .main .section > .items .item > .context .title {
   font-size: 20px;
   line-height: 1.15;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .context > .price {
+#root .shop > .wrapper .main .section > .items .item > .context .price {
   line-height: 1.88;
   color: #767676;
 }
 
-#root .shop > .wrapper > .main > .section > .items > .item > .detail {
+#root .shop > .wrapper .main .section > .items .item .detail {
   margin-top: 22px;
   color: #767676;
 }
 
-#root .shop > .wrapper > .main > .section > .nav {
+#root .shop > .wrapper .main .section .nav {
   margin-top: 55px;
   margin-bottom: 140px;
   width: 100%;
@@ -372,7 +404,7 @@
           align-items: center;
 }
 
-#root .shop > .wrapper > .main > .section > .nav > .moving-pages {
+#root .shop > .wrapper .main .section .nav .moving-pages {
   position: absolute;
   left: 0px;
   display: -webkit-box;
@@ -385,7 +417,7 @@
           column-gap: 15px;
 }
 
-#root .shop > .wrapper > .main > .section > .nav > .moving-pages > .moving-page {
+#root .shop > .wrapper .main .section .nav .moving-pages .moving-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,17 +436,18 @@
   cursor: pointer;
 }
 
-#root .shop > .wrapper > .main > .section > .nav > .moving-pages > .more {
+#root .shop > .wrapper .main .section .nav .moving-pages .more {
   height: 16px;
   margin-left: 10px;
   margin-right: 7px;
 }
 
-#root .shop > .wrapper > .main > .section > .nav > .moving-pages > :first-child {
+#root .shop > .wrapper .main .section .nav .moving-pages .open-page {
   background-color: black;
+  color: white;
 }
 
-#root .shop > .wrapper > .main > .section > .nav > .page-info {
+#root .shop > .wrapper .main .section .nav .page-info {
   position: absolute;
   right: 0px;
   font-size: 14px;

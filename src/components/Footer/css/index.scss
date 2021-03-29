@@ -18,7 +18,7 @@ $grey-1: #6d6d6d;
             padding-bottom: 55px;
             box-sizing: border-box;
 
-            &>.left {
+            .left {
                 position: absolute;
                 left: 0px;
                 display: flex;
@@ -26,13 +26,13 @@ $grey-1: #6d6d6d;
                 justify-content: space-between;
                 box-sizing: border-box;
 
-                &>.menus {
+                .menus {
                     display: grid;
                     grid-template-columns: repeat(3, auto);
                     column-gap: 80px;
 
-                    &>.contents {
-                        &>.title {
+                    .contents {
+                        .title {
                             font-size: 16px;
                         }
                     }
@@ -41,7 +41,7 @@ $grey-1: #6d6d6d;
                         display: flex;
                         flex-direction: column;
 
-                        &>.menus {
+                        .menus {
                             display: grid;
                             grid-template-columns: repeat(1, 1fr);
                             row-gap: 10px;
@@ -52,17 +52,17 @@ $grey-1: #6d6d6d;
                 }
             }
 
-            &>.contacts {
+            .contacts {
                 display: flex;
                 flex-direction: column;
                 box-sizing: border-box;
 
-                &>.number,
-                &>.email {
+                .number,
+                .email {
                     line-height: 1.69;
                 }
 
-                &>.address {
+                .address {
                     margin-top: 25px;
                     font-size: 14px;
                     line-height: 1.64;
@@ -70,22 +70,13 @@ $grey-1: #6d6d6d;
                 }
             }
 
-            &>.right {
+            .right {
                 position: absolute;
                 right: 0px;
                 height: calc(100% - 115px);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                
-                &> .logo {
-                    // position: absolute;
-                    // top: 0px;    
-                }
-                &> .rights {
-                    // position: absolute;
-                    // bottom: 0px;
-                }
             }
         }
     }

@@ -25,7 +25,7 @@
           box-sizing: border-box;
 }
 
-#root .footer > .wrapper > .left {
+#root .footer > .wrapper .left {
   position: absolute;
   left: 0px;
   display: -webkit-box;
@@ -42,7 +42,7 @@
           box-sizing: border-box;
 }
 
-#root .footer > .wrapper > .left > .menus {
+#root .footer > .wrapper .left .menus {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[3];
@@ -51,11 +51,11 @@
           column-gap: 80px;
 }
 
-#root .footer > .wrapper > .left > .menus > .contents > .title {
+#root .footer > .wrapper .left .menus .contents .title {
   font-size: 16px;
 }
 
-#root .footer > .wrapper > .left > .menus .footer-menus {
+#root .footer > .wrapper .left .menus .footer-menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +65,7 @@
           flex-direction: column;
 }
 
-#root .footer > .wrapper > .left > .menus .footer-menus > .menus {
+#root .footer > .wrapper .left .menus .footer-menus .menus {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[1];
@@ -75,7 +75,7 @@
   margin-bottom: 68px;
 }
 
-#root .footer > .wrapper > .contacts {
+#root .footer > .wrapper .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,19 +87,19 @@
           box-sizing: border-box;
 }
 
-#root .footer > .wrapper > .contacts > .number,
-#root .footer > .wrapper > .contacts > .email {
+#root .footer > .wrapper .contacts .number,
+#root .footer > .wrapper .contacts .email {
   line-height: 1.69;
 }
 
-#root .footer > .wrapper > .contacts > .address {
+#root .footer > .wrapper .contacts .address {
   margin-top: 25px;
   font-size: 14px;
   line-height: 1.64;
   color: #6d6d6d;
 }
 
-#root .footer > .wrapper > .right {
+#root .footer > .wrapper .right {
   position: absolute;
   right: 0px;
   height: calc(100% - 115px);

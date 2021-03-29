@@ -1,13 +1,17 @@
 import React from 'react';
 
-function Variety({ menu }) {
+function Variety({ contents: { context, btn, alt, color, color_display } }) {
   return (
-    <div className="items">
-      <div className="item">
-        <div className="context">{menu.title}</div>
-        <div className="plus-icon">
-          <img src="/assets/shop/plus-icon.svg" alt="plus-icon" />
-        </div>
+    <div className="item">
+      <div className="content">
+        <div
+          className="color"
+          style={{ backgroundColor: `${color}`, display: `${color_display}` }}
+        ></div>
+        <div className="context">{context}</div>
+      </div>
+      <div className="plus-icon">
+        <img src={`${btn}`} alt={`${alt}`} />
       </div>
     </div>
   );

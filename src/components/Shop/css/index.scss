@@ -20,11 +20,11 @@ $grey-4: #d8d8d8;
             &>.title {
                 margin-top: 128px;
 
-                &>.context {
+                .context {
                     font-size: 49px;
                 }
 
-                &>.path {
+                .path {
                     margin-top: 16px;
                     font-size: 12px;
                     line-height: 1.17;
@@ -32,71 +32,103 @@ $grey-4: #d8d8d8;
                 }
             }
 
-            &>.main {
+            .main {
                 width: 100%;
                 margin-top: 133px;
                 display: flex;
                 column-gap: 38.4px;
 
-                &>.aside {
+                .aside {
                     width: 369.6px;
                     display: flex;
                     flex-direction: column;
-                    &>.block{
+                    .block{
                         display: flex;
                         flex-direction: column;
                         row-gap: 56px;
-                    &>.varietys {
+                    .varietys {
                         width: 100%;
                         display: flex;
                         flex-direction: column;
 
                         &>.title {
-                            margin-bottom: 42px;
-                            font-size: 20px;
-                            line-height: 1.15;
+                            position: relative;
+                            height: 23px;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 15px;
+                            
+                            .context {
+                                position: absolute;
+                                left: 0px;
+                                font-size: 20px;
+                                line-height: 1.15;
+                                
+                            }
+                            .icon {
+                                position: absolute;
+                                right: 0px;
+                            }
                         }
 
-                        &>.items {
-                            display: flex;
-                            flex-direction: column;
+              
                                                      
 
-                            &>.item {
+                            .item {
+                                display: flex;
+                                align-items: center;
                                 position: relative;
                                 width: 100%;
                                 height: 45px;
                                 display: flex;
-                                align-items: flex-start;
                                 border-bottom: solid 1px #f0f0f0;
                                 margin-top: 27px;
+                                padding-bottom: 25px;
+                                box-sizing: border-box;
                                 cursor: pointer;
 
-                                &>.context {
-                                position: absolute;
-                                left: 0px;
-                                 line-height: 1.88;
-                                 color: $grey-2;
+                                &>.content {
+                                    display: flex;
+                                    align-items: center;
+                                    position: absolute;
+                                    left: 0px;
+                                    .color {
+                                        margin-right: 10px;
+                                        width: 11px;
+                                        height: 11px;
+                                        border-radius: 50%;
+                                        // background-color: #000000;
+                                    }
+
+                                    .context {
+                                        line-height: 1.88;
+                                        color: $grey-2;
+                                    }
                                 }
-                                &>.plus-icon {
+                                
+                                .plus-icon {
                                     position: absolute;
                                     right: 0px;
+
+                                    &> img {
+                                        width: 16px;
+                                    }
                                 }
-                            }
+                            
                         }
                     }
                 }
             }
 
-                &>.section {
+                .section {
                     width: calc(100% - 408px);
 
-                    &>.sort {
+                    .sort {
                         width: 100%;
                         height: 36px;
                         position: relative;
 
-                        &>.sort-style {
+                        .sort-style {
                             position: absolute;
                             left: 0px;
                             display: flex;
@@ -109,7 +141,7 @@ $grey-4: #d8d8d8;
                             }
                         }
 
-                        &>.selection {
+                        .selection {
                             column-gap: 40px;
                             position: absolute;
                             right: 0px;
@@ -119,13 +151,13 @@ $grey-4: #d8d8d8;
                             line-height: 1.88;
                             color: $grey-2;
 
-                            &>.sort-by {
+                            .sort-by {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 column-gap: 15px;
 
-                                &>.selection-box {
+                                .selection-box {
                                     position: relative;
                                     display: flex;
                                     align-items: center;
@@ -134,7 +166,7 @@ $grey-4: #d8d8d8;
                                     height: 36px;
                                     cursor: pointer;
 
-                                    &>.kinds {
+                                    .kinds {
                                         position: absolute;
                                         left: 21px;
                                     }
@@ -167,10 +199,10 @@ $grey-4: #d8d8d8;
                         column-gap: 40px;
                         row-gap: 55px;
 
-                        &>.item {
+                        .item {
                             width: 100%;
 
-                            &>.img-box {
+                            .img-box {
                                 cursor: pointer;
                                 position: relative;
                                 padding-left: 20px;
@@ -253,26 +285,25 @@ $grey-4: #d8d8d8;
                                 display: flex;
                                 justify-content: space-between;
 
-                                &>.title {
+                                .title {
                                     font-size: 20px;
                                     line-height: 1.15;
                                 }
 
-                                &>.price {
+                                .price {
                                     line-height: 1.88;
                                     color: $grey-2;
                                 }
                             }
 
-                            &>.detail {
+                            .detail {
                                 margin-top: 22px;
                                 color: $grey-2;
                             }
                         }
                     }
 
-                    // end
-                    &>.nav {
+                    .nav {
                         margin-top: 55px;
                         margin-bottom: 140px;
                         width: 100%;
@@ -281,14 +312,14 @@ $grey-4: #d8d8d8;
                         display: flex;
                         align-items: center;
 
-                        &>.moving-pages {
+                        .moving-pages {
                             position: absolute;
                             left: 0px;
                             display: flex;
                             align-items: center;
                             column-gap: 15px;
 
-                            &>.moving-page {
+                            .moving-page {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -301,18 +332,19 @@ $grey-4: #d8d8d8;
                                 cursor: pointer;
                             }
 
-                            &>.more {
+                            .more {
                                 height: 16px;
                                 margin-left: 10px;
                                 margin-right: 7px;
                             }
 
-                            &> :first-child {
+                             .open-page {
                                 background-color: black;
+                                color: white;
                             }
                         }
 
-                        &>.page-info {
+                        .page-info {
                             position: absolute;
                             right: 0px;
                             font-size: 14px;

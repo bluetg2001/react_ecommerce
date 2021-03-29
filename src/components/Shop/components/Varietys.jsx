@@ -1,15 +1,18 @@
 import React from 'react';
 import Variety from './components/Variety';
-import { useSelector } from 'react-redux';
 
-function Varietys({ titles }) {
-  const categorySet = useSelector((state) => state.layouts.shop);
-
+function Varietys({ settings: { title, icon, alt, contents } }) {
   return (
     <div className="varietys">
-      <div className="title txt-bold">{titles.title}</div>
-      {categorySet.map((categorySet, idx) => {
-        return <Variety menu={categorySet} key={idx} />;
+      <div className="title txt-bold">
+        <div className="context">{title}</div>
+        <div className="icon">
+          <img src={`${icon}`} alt={`${alt}`} />
+        </div>
+      </div>
+
+      {contents.map((contents, idx) => {
+        return <Variety contents={contents} key={idx} />;
       })}
     </div>
   );
