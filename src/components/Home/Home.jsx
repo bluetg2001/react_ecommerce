@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import './css/index.css';
 import Items from './components/Items/Items';
 import Gauge from './components/Gauge/gauge';
+import ToJournal from './components/ToJournal/ToJournal';
 
 function Home() {
   const finalOfferSet = useSelector((state) => state.layouts.home.finalOffer);
@@ -16,6 +17,7 @@ function Home() {
   const offersSet = useSelector((state) => state.layouts.home.contents.offers);
   const phonesSet = useSelector((state) => state.layouts.phones);
   const salesSet = useSelector((state) => state.layouts.sales);
+  const journalLink = useSelector((state) => state.layouts.home.journal);
 
   return (
     <div className="home">
@@ -108,42 +110,9 @@ function Home() {
             <div className="view-all">View all</div>
           </div>
           <div className="contents">
-            <div className="block">
-              <div className="content"></div>
-              <div className="category">Category</div>
-              <div className="title txt-bold">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </div>
-              <div className="context">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-            <div className="block">
-              <div className="content"></div>
-              <div className="category">Category</div>
-              <div className="title txt-bold">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </div>
-              <div className="context">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-            <div className="block">
-              <div className="content"></div>
-              <div className="category">Category</div>
-              <div className="title txt-bold">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </div>
-              <div className="context">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
+            {journalLink.map((journalLink, idx) => {
+              return <ToJournal link={journalLink} key={idx} />;
+            })}
           </div>
         </div>
       </div>

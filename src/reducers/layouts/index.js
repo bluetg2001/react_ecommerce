@@ -108,40 +108,20 @@ const initialState = {
                 ],
 
             },
-
-            journal: {
-                title: 'Journal',
-                item: [{
-                        title: 'Basic Crew Neck Tee',
-                        price: '44',
-                        detail: 'Black',
-                        event: 'New',
-                        percent: '0'
-                    },
-                    {
-                        title: 'Basic Crew Neck Tee',
-                        price: '40',
-                        detail: 'Black',
-                        event: 'New',
-                        percent: '0'
-                    },
-                    {
-                        title: 'Basic Crew Neck Tee',
-                        price: '44',
-                        detail: 'Black',
-                        event: 'New',
-                        percent: '0'
-                    },
-                    {
-                        title: 'Basic Crew Neck Tee',
-                        price: '44',
-                        detail: 'Black',
-                        event: 'New',
-                        percent: '0'
-                    },
-                ],
+        },
+        journal: [{
+                idx : '1',
+                path: '/journal/1',
             },
-        }
+            {
+                idx : '2',
+                path: '/journal/2',
+            },
+            {
+                idx : '3',
+                path: '/journal/3',
+            },
+        ]
     },
 
     //Sale 
@@ -271,155 +251,155 @@ const initialState = {
     shop: {
         category: {
             title: 'Shop by Category',
-            icon : 'none',
-            alt : '',
-            
+            icon: 'none',
+            alt: '',
+
             contents: [{
                     context: 'Category1',
                     btn: 'assets/shop/plus-icon.svg',
                     alt: 'plus-icon',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: 'Category2',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: 'Category3',
                     btn: 'assets/shop/plus-icon.svg',
                     alt: 'plus-icon',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: 'Category4',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: 'Category5',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
             ]
         },
         color: {
-            
+
             title: 'Shop by Color',
-            icon : '/assets/shop/dropup-icon.svg',
-            alt : 'dropup-icon',
-            
+            icon: '/assets/shop/dropup-icon.svg',
+            alt: 'dropup-icon',
+
             contents: [{
                     context: 'Color1',
                     btn: 'assets/shop/plus-icon.svg',
                     alt: 'plus-icon',
-                    color_display : 'block',
-                    color : '#000000',
+                    color_display: 'block',
+                    color: '#000000',
                 },
                 {
                     context: 'Color2',
                     btn: 'none',
                     alt: '',
-                    color_display : 'block',
-                    color : '#ff8686',
+                    color_display: 'block',
+                    color: '#ff8686',
                 },
                 {
                     context: 'Color3',
                     btn: 'assets/shop/plus-icon.svg',
                     alt: 'plus-icon',
-                    color_display : 'block',
-                    color : '#7ed321',
+                    color_display: 'block',
+                    color: '#7ed321',
                 },
                 {
                     context: 'Color4',
                     btn: 'none',
                     alt: '',
-                    color_display : 'block',
-                    color : '#b6b6b6',
+                    color_display: 'block',
+                    color: '#b6b6b6',
                 },
                 {
                     context: 'Color5',
                     btn: 'none',
                     alt: '',
-                    color_display : 'block',
-                    color : '#15cba5',
+                    color_display: 'block',
+                    color: '#15cba5',
                 },
             ]
         },
         brand: {
             title: 'Shop by Brand',
-            icon : '/assets/shop/dropup-icon.svg',
-            alt : 'dropup-icon',
-            
+            icon: '/assets/shop/dropup-icon.svg',
+            alt: 'dropup-icon',
+
             contents: [{
                     context: 'Brand1',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: 'Brand2',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: 'Brand3',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: 'Brand4',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: 'Brand5',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
             ]
         },
         price: {
             title: 'Shop by Price',
-            icon : 'none',
-            alt : '',
-            
+            icon: 'none',
+            alt: '',
+
             contents: [{
                     context: '$0.00 - $9.99',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: '$10.00 - $19.99',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: '$20.00 - $29.99',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: '$30.00 - $39.99',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
                 {
                     context: '$40.00 - $49.99',
                     btn: 'none',
                     alt: '',
-                    color_display : 'none',
+                    color_display: 'none',
                 },
             ]
         },
