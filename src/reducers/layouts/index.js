@@ -405,6 +405,10 @@ const initialState = {
         },
     },
 
+    shopInside : {
+        
+    },
+
 
 
     category: {

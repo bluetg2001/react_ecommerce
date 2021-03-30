@@ -11,6 +11,7 @@ import Shop from './Shop/Shop';
 import Contacts from './Contacts/Contacts';
 import Journal from './Journal/Journal';
 import JournalInside from './Journal/components/JournalInside';
+import ShopInside from './ShopInside/ShopInside';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contacts" exact component={Contacts} />
         <Route path="/journal" exact component={Journal} />
         <Route path="/journal/:id" exact component={JournalInside} />
+        <Route path="shop/:id" exact component={ShopInside} />
         <Route path="/" component={NotFound} />
       </Switch>
       <Footer />
