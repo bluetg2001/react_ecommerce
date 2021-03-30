@@ -6,7 +6,7 @@ function JournalCard({ categories, title, desc }) {
       <div className="card-img"></div>
       <div className="desc">
         <div className="category">{categories}</div>
-        <h3 className="title">{title}</h3>
+        <div className="title txt-bold">{title}</div>
         <div className="subtitle">{desc}</div>
       </div>
     </article>

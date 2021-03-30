@@ -7,9 +7,7 @@ import { useSelector } from 'react-redux';
 import Archives from './components/Archives';
 import Categories from './components/Categories';
 import Metas from './components/Metas';
-import JournalMain from './components/JournalMain';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import JournalInside from './components/JournalInside';
+import { Link } from 'react-router-dom';
 
 function Journal() {
   const articles = useSelector((state) => state.layouts.journal.articles);
@@ -17,6 +15,7 @@ function Journal() {
   const archives = useSelector((state) => state.layouts.journal.archives);
   const categories = useSelector((state) => state.layouts.journal.categories);
   const metas = useSelector((state) => state.layouts.journal.metas);
+  // const articles = useSelector((state) => state.layouts.journal.articles);
 
   return (
     <section className="journal">
@@ -26,7 +25,22 @@ function Journal() {
           <div className="bread-crumbs">Home &gt; Journal</div>
         </div>
         <div className="main">
-          <JournalMain />
+          <div className="contents">
+            <div className="articles">
+              {articles.map(({ categories, title, desc, path }, idx) => {
+                return (
+                  <Link to={path}>
+                    <JournalCard
+                      title={title}
+                      desc={desc}
+                      categories={categories}
+                    />
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="more-btn txt-bold">Load More</div>
+          </div>
           <aside className="router">
             <JournalInput />
             <div className="recent-posts">
@@ -45,7 +59,7 @@ function Journal() {
             <div className="archives">
               <div className="title txt-bold">Archives</div>
               {archives.map(({ context }, idx) => {
-                return <Archives context={context} />;
+                return <Archives context={context} key={idx} />;
               })}
             </div>
             <div className="categories">
