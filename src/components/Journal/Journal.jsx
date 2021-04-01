@@ -31,6 +31,7 @@ function Journal() {
                 return (
                   <Link to={path}>
                     <JournalCard
+                      key={idx}
                       title={title}
                       desc={desc}
                       categories={categories}
@@ -49,6 +50,7 @@ function Journal() {
                 {recent_posts.map(({ front_txt, behind_txt }, idx) => {
                   return (
                     <RecentPosts
+                      key={idx}
                       front_txt={front_txt}
                       behind_txt={behind_txt}
                     />
@@ -66,7 +68,7 @@ function Journal() {
               <div className="title txt-bold">Categories</div>
               <ul className="wrapper">
                 {categories.map(({ context }, idx) => {
-                  return <Categories context={context} />;
+                  return <Categories context={context} key={idx} />;
                 })}
               </ul>
             </div>
@@ -74,7 +76,7 @@ function Journal() {
               <div className="title txt-bold">Meta</div>
               <ul className="wrapper">
                 {metas.map(({ context }, idx) => {
-                  return <Metas context={context} />;
+                  return <Metas context={context} key={idx} />;
                 })}
               </ul>
             </div>

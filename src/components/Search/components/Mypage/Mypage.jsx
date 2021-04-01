@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Mypage() {
   return (
@@ -11,9 +12,11 @@ function Mypage() {
           <img src="/assets/Search/mysettings-icon.svg" alt="내 설정" />
         </div>
       </div>
-      <div className="myshop">
-        <img src="/assets/Search/myshop-icon.svg" alt="내 장바구니" />
-      </div>
+      <Link to="/cart">
+        <div className="myshop">
+          <img src="/assets/Search/myshop-icon.svg" alt="내 장바구니" />
+        </div>
+      </Link>
     </div>
   );
 }

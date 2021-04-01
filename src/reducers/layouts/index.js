@@ -110,15 +110,15 @@ const initialState = {
             },
         },
         journal: [{
-                idx : '1',
+                idx: '1',
                 path: '/journal/1',
             },
             {
-                idx : '2',
+                idx: '2',
                 path: '/journal/2',
             },
             {
-                idx : '3',
+                idx: '3',
                 path: '/journal/3',
             },
         ]
@@ -405,11 +405,6 @@ const initialState = {
         },
     },
 
-    shopInside : {
-        
-    },
-
-
 
     category: {
         title: 'Shop by Category'
@@ -431,14 +426,18 @@ const initialState = {
             price: '44',
             color: 'Black',
             type: 'discount',
-            percent: '10'
+            percent: '10',
+            path: '/shop/1',
+            idx: '1',
         },
         {
 
             title: 'Basic Crew Neck Tee',
             price: '44',
             color: 'Black',
-            type: 'new'
+            type: 'new',
+            path: '/shop/2',
+            idx: '2',
         },
         {
 
@@ -446,27 +445,15 @@ const initialState = {
             price: '44',
             color: 'Black',
             type: 'discount',
-            percent: '30'
+            percent: '30',
+            path: '/shop/3'
         },
         {
 
             title: 'Basic Crew Neck Tee',
             price: '44',
             color: 'Black',
-
-        },
-        {
-
-            title: 'Basic Crew Neck Tee',
-            price: '44',
-            color: 'Black',
-
-        },
-        {
-
-            title: 'Basic Crew Neck Tee',
-            price: '44',
-            color: 'Black',
+            path: '/shop/4'
 
         },
         {
@@ -474,42 +461,56 @@ const initialState = {
             title: 'Basic Crew Neck Tee',
             price: '44',
             color: 'Black',
-
+            path: '/shop/5'
         },
         {
 
             title: 'Basic Crew Neck Tee',
             price: '44',
             color: 'Black',
-
+            path: '/shop/6'
         },
         {
 
             title: 'Basic Crew Neck Tee',
             price: '44',
             color: 'Black',
-
+            path : '/shop/7'
         },
         {
 
             title: 'Basic Crew Neck Tee',
             price: '44',
             color: 'Black',
-
+            path : '/shop/8'
         },
         {
 
             title: 'Basic Crew Neck Tee',
             price: '44',
             color: 'Black',
-
+            path : '/shop/9'
         },
         {
 
             title: 'Basic Crew Neck Tee',
             price: '44',
             color: 'Black',
+            path : '/shop/10'
+        },
+        {
 
+            title: 'Basic Crew Neck Tee',
+            price: '44',
+            color: 'Black',
+            path : '/shop/11'
+        },
+        {
+
+            title: 'Basic Crew Neck Tee',
+            price: '44',
+            color: 'Black',
+            path : '/shop/12'
         },
     ],
 
