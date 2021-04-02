@@ -13,6 +13,7 @@ import Journal from './Journal/Journal';
 import JournalInside from './Journal/components/JournalInside';
 import ShopInside from './ShopInside/ShopInside';
 import Cart from './Cart/Cart';
+import MyAccount from './MyAccount/MyAccount';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/journal/:id" exact component={JournalInside} />
         <Route path="/shop/:id" exact component={ShopInside} />
         <Route path="/cart" exact component={Cart} />
+        <Route path="/myaccount" exact component={MyAccount} />
         <Route path="/" component={NotFound} />
       </Switch>
       <Footer />

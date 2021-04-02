@@ -5,9 +5,11 @@ function Mypage() {
   return (
     <div className="mypage">
       <div className="mymenus">
-        <div className="myprofile">
-          <img src="/assets/Search/myprofile-icon.svg" alt="내 프로필" />
-        </div>
+        <Link to="/myaccount">
+          <div className="myprofile">
+            <img src="/assets/Search/myprofile-icon.svg" alt="내 프로필" />
+          </div>
+        </Link>
         <div className="mysettings">
           <img src="/assets/Search/mysettings-icon.svg" alt="내 설정" />
         </div>
