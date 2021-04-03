@@ -15,6 +15,7 @@ import ShopInside from './ShopInside/ShopInside';
 import Cart from './Cart/Cart';
 import MyAccount from './MyAccount/MyAccount';
 import Login from './Login/Login';
+import Signup from './Signup/Signup';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
         <Route path="/cart" exact component={Cart} />
         <Route path="/myaccount" exact component={MyAccount} />
         <Route path="/login" exact component={Login} />
+        <Route path="/signup" exact component={Signup} />
+
         <Route path="/" component={NotFound} />
       </Switch>
       <Footer />

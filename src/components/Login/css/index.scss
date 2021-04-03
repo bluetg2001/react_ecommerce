@@ -94,11 +94,14 @@ $black-1 : #2b2b2b;
             }
             .sign-up {
                 margin-top: 62px;
+                display: flex;
+                flex-direction: column;
                 &>.title {
                     font-size: 39px;
                     line-height: 1.15;
                 }
                 .desc {
+                    margin-top: 46px;
                     width: 644px;
                     height: 60px;
                     line-height: 1.88;
@@ -118,5 +121,5 @@ $black-1 : #2b2b2b;
                 }
             }
         }
-    }    
+    }   
 }

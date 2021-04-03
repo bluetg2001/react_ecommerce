@@ -111,6 +111,13 @@
 
 #root .login > .wrapper .sign-up {
   margin-top: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #root .login > .wrapper .sign-up > .title {
@@ -119,6 +126,7 @@
 }
 
 #root .login > .wrapper .sign-up .desc {
+  margin-top: 46px;
   width: 644px;
   height: 60px;
   line-height: 1.88;

@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/index.css';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
@@ -41,7 +42,9 @@ function Login() {
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the.
           </div>
-          <div className="sign-up-btn txt-bold">Continue</div>
+          <Link to="/signup">
+            <div className="sign-up-btn txt-bold">Continue</div>
+          </Link>
         </div>
       </div>
     </div>
