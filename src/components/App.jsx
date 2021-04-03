@@ -14,6 +14,7 @@ import JournalInside from './Journal/components/JournalInside';
 import ShopInside from './ShopInside/ShopInside';
 import Cart from './Cart/Cart';
 import MyAccount from './MyAccount/MyAccount';
+import Login from './Login/Login';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/shop/:id" exact component={ShopInside} />
         <Route path="/cart" exact component={Cart} />
         <Route path="/myaccount" exact component={MyAccount} />
+        <Route path="/login" exact component={Login} />
         <Route path="/" component={NotFound} />
       </Switch>
       <Footer />

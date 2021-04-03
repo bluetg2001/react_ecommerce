@@ -7,6 +7,8 @@
           justify-content: center;
   padding-top: 128px;
   padding-bottom: 140px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #root .journal > .wrapper {

@@ -5,14 +5,16 @@ function Mypage() {
   return (
     <div className="mypage">
       <div className="mymenus">
-        <Link to="/myaccount">
+        <Link to="/login">
           <div className="myprofile">
             <img src="/assets/Search/myprofile-icon.svg" alt="내 프로필" />
           </div>
         </Link>
-        <div className="mysettings">
-          <img src="/assets/Search/mysettings-icon.svg" alt="내 설정" />
-        </div>
+        <Link to="/myaccount">
+          <div className="mysettings">
+            <img src="/assets/Search/mysettings-icon.svg" alt="내 설정" />
+          </div>
+        </Link>
       </div>
       <Link to="/cart">
         <div className="myshop">
