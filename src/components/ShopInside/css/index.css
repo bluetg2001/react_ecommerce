@@ -7,6 +7,7 @@
           justify-content: center;
   padding-top: 128px;
   padding-bottom: 140px;
+  min-height: 100vh;
 }
 
 #root .shop-inside > .wrapper {
@@ -164,6 +165,10 @@
 }
 
 #root .shop-inside > .wrapper .product-option .select-option .select-color .colors .color {
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -171,32 +176,14 @@
   cursor: pointer;
 }
 
-#root .shop-inside > .wrapper .product-option .select-option .select-color .colors .selected {
-  width: 28px;
-  height: 28px;
+#root .shop-inside > .wrapper .product-option .select-option .select-color .colors .scale-up {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-#root .shop-inside > .wrapper .product-option .select-option .select-color .colors .dark-gray {
-  background-color: #c4c4c4;
-}
-
-#root .shop-inside > .wrapper .product-option .select-option .select-color .colors .red {
-  background-color: #ff8686;
-}
-
-#root .shop-inside > .wrapper .product-option .select-option .select-color .colors .dark-green {
-  background-color: #7ed321;
-  opacity: 0.2;
-}
-
-#root .shop-inside > .wrapper .product-option .select-option .select-color .colors .gray {
-  background-color: #b6b6b6;
-  opacity: 0.2;
-}
-
-#root .shop-inside > .wrapper .product-option .select-option .select-color .colors .green {
-  background-color: #15cba5;
-  opacity: 0.2;
+#root .shop-inside > .wrapper .product-option .select-option .select-color .colors .chip-default {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #root .shop-inside > .wrapper .product-option .select-option .select-size {

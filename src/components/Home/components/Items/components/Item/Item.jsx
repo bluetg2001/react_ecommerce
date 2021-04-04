@@ -1,29 +1,21 @@
 import React, { useState, useCallback } from 'react';
 
-function Item({ item: { title, price, detail, event, percent } }) {
-  function sale(fl, dis) {
-    if (dis) {
-      return (fl * (100 - dis)) / 100;
-    } else {
-      return fl;
-    }
+function sale(fl, dis) {
+  if (dis) {
+    return (fl * (100 - dis)) / 100;
+  } else {
+    return fl;
   }
+}
 
+function Item({ item: { title, price, detail, event, percent } }) {
   const [isOptionOpen, setIsOptionOpen] = useState(false);
-
-  const showOptions = useCallback(() => {
-    setIsOptionOpen(true);
-  }, []);
-
-  const closeOptions = useCallback(() => {
-    setIsOptionOpen(false);
-  }, []);
 
   return (
     <div
       className="contents"
-      onMouseOver={showOptions}
-      onMouseOut={closeOptions}
+      onMouseOver={() => setIsOptionOpen(true)}
+      onMouseOut={() => setIsOptionOpen(false)}
     >
       <div className="content">
         {event ? (
